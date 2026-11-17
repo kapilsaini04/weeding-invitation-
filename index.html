@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robin & Kanchan Wedding Invitation</title>
+<title>Kanchan Weds Robin | Royal Wedding Invitation</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -13,8 +13,8 @@
 body{
  margin:0;
  overflow:hidden;
- background:#160e0c;
- color:#74514b;
+ background:#250b16;
+ color:#633b35;
  font-family:Poppins,sans-serif;
  text-align:center;
 }
@@ -23,16 +23,17 @@ body{
  position:fixed;
  inset:0;
  min-height:100dvh;
- padding:22px 17px 65px;
+ padding:25px 17px 75px;
  display:flex;
  align-items:center;
  justify-content:center;
  overflow-y:auto;
- background:linear-gradient(145deg,#fff8ef,#f5e1df,#f9edda);
+ background:
+ radial-gradient(circle at top,#fff8e9,#f4e5d6 55%,#ead1c4);
  transform:translateY(100%);
  opacity:0;
  visibility:hidden;
- transition:transform .85s cubic-bezier(.22,.8,.25,1),opacity .65s;
+ transition:transform .85s cubic-bezier(.22,.8,.25,1),opacity .7s;
 }
 
 .page.active{
@@ -45,16 +46,17 @@ body{
 .page.exit{
  transform:translateY(-100%);
  opacity:0;
+ visibility:hidden;
 }
 
 .card{
  width:100%;
  max-width:480px;
- padding:30px 20px;
- background:rgba(255,253,247,.97);
- border:2px solid #d6ae85;
- border-radius:22px;
- box-shadow:0 12px 40px #77543b30;
+ padding:30px 21px;
+ background:#fffaf0;
+ border:2px solid #c49a54;
+ border-radius:18px;
+ box-shadow:0 12px 40px #45132335;
  position:relative;
 }
 
@@ -62,25 +64,25 @@ body{
  content:"";
  position:absolute;
  inset:7px;
- border:1px solid #e8cbb0;
- border-radius:16px;
+ border:1px solid #d8b77b;
+ border-radius:12px;
  pointer-events:none;
 }
 
 .script{
  font-family:'Great Vibes',cursive;
- color:#a66f70;
+ color:#811d3b;
 }
 
 h1.script{
- font-size:clamp(48px,13vw,72px);
- margin:10px 0;
+ font-size:clamp(48px,13vw,70px);
+ margin:12px 0;
 }
 
 h2{
  font-family:'Playfair Display',serif;
- color:#a66f70;
- font-size:26px;
+ color:#811d3b;
+ font-size:25px;
 }
 
 p{line-height:1.8}
@@ -88,7 +90,7 @@ p{line-height:1.8}
 .small{
  letter-spacing:3px;
  font-size:11px;
- color:#aa8272;
+ color:#987344;
 }
 
 .flower{
@@ -97,46 +99,46 @@ p{line-height:1.8}
 }
 
 .btn{
- border:0;
- background:linear-gradient(135deg,#ad7475,#815052);
- color:white;
- padding:13px 25px;
+ border:1px solid #d7b36d;
+ background:linear-gradient(135deg,#8d2542,#4d1027);
+ color:#fff6e5;
+ padding:13px 24px;
  border-radius:30px;
  margin:8px 4px;
  font-size:13px;
  cursor:pointer;
  display:inline-block;
  text-decoration:none;
- box-shadow:0 4px 12px #a66f7030;
+ box-shadow:0 5px 15px #52182b30;
 }
 
 .btn.light{
- background:#ead7c9;
- color:#805a56;
+ background:#e9d8b9;
+ color:#6d3b35;
 }
 
 .heart{
  font-size:35px;
- color:#c58b8a;
+ color:#a72e4b;
 }
 
 .line{
  height:1px;
- background:#e7cfc4;
+ background:#d9bd8d;
  margin:22px 0;
 }
 
 .event{
- background:#fff8f4;
- border:1px solid #ead5ca;
- padding:13px;
- margin:11px 0;
- border-radius:14px;
+ background:#fff7e9;
+ border:1px solid #d7b77c;
+ padding:14px;
+ margin:12px 0;
+ border-radius:12px;
 }
 
 .event h3{
  font-family:'Playfair Display',serif;
- color:#a66f70;
+ color:#811d3b;
  margin:0 0 5px;
 }
 
@@ -145,32 +147,106 @@ p{line-height:1.8}
 .names{
  font-family:'Playfair Display',serif;
  font-size:19px;
- color:#9d6c6d;
+ color:#87533f;
 }
 
 #countdown{
  font-size:13px;
- color:#a66f70;
- margin-top:14px;
+ color:#811d3b;
+ margin-top:15px;
 }
 
 footer{
  font-size:12px;
- color:#a77c71;
+ color:#987344;
  margin-top:20px;
 }
 
-/* GANESH IMAGE */
+/* GANESHA IMAGE */
 
 .ganesh{
- width:155px;
- height:155px;
+ width:165px;
+ height:165px;
  object-fit:contain;
  margin:12px auto;
- filter:drop-shadow(0 5px 9px #9b684455);
+ filter:drop-shadow(0 5px 12px #a77c4555);
 }
 
-/* FLOATING FLOWERS */
+/* ENVELOPE */
+
+.envelope{
+ width:270px;
+ height:180px;
+ margin:35px auto;
+ position:relative;
+ background:linear-gradient(145deg,#8c2541,#4b1027);
+ border:3px solid #d7b36d;
+ border-radius:8px;
+ box-shadow:0 12px 30px #4b172d55;
+ cursor:pointer;
+ perspective:800px;
+}
+
+.envelope:before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:
+ linear-gradient(35deg,transparent 49%,#d1a45e 50%,transparent 51%),
+ linear-gradient(-35deg,transparent 49%,#d1a45e 50%,transparent 51%);
+}
+
+.flap{
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:#a43b54;
+ clip-path:polygon(0 0,100% 0,50% 60%);
+ transform-origin:top;
+ transition:transform 1s;
+ z-index:3;
+ border-top:2px solid #e4c47e;
+}
+
+.seal{
+ position:absolute;
+ top:54px;
+ left:calc(50% - 29px);
+ width:58px;
+ height:58px;
+ border-radius:50%;
+ background:radial-gradient(#f2d58e,#ae7436);
+ color:#721a35;
+ display:grid;
+ place-items:center;
+ font-size:25px;
+ border:2px solid #fff0c2;
+ z-index:4;
+ transition:.5s;
+}
+
+.envelope.opened .flap{
+ transform:rotateX(180deg);
+}
+
+.envelope.opened .seal{
+ opacity:0;
+ transform:scale(0);
+}
+
+.envelope-text{
+ position:absolute;
+ bottom:12px;
+ width:100%;
+ color:#ffe9bd;
+ font-family:'Playfair Display',serif;
+ font-size:17px;
+ z-index:2;
+}
+
+/* FLOATING PETALS */
 
 .petals{
  position:fixed;
@@ -184,7 +260,7 @@ footer{
  position:absolute;
  top:-30px;
  animation:fall linear infinite;
- opacity:.7;
+ opacity:.65;
 }
 
 @keyframes fall{
@@ -199,11 +275,11 @@ footer{
  max-width:310px;
  height:190px;
  margin:20px auto;
- border-radius:20px;
+ border-radius:18px;
  overflow:hidden;
- background:linear-gradient(135deg,#fff0f0,#f9d9d9);
- border:2px solid #d7a16e;
- box-shadow:0 7px 20px #a66f7030;
+ background:linear-gradient(135deg,#fff0e1,#f3d4ba);
+ border:2px solid #bd8e4c;
+ box-shadow:0 7px 20px #6b203030;
 }
 
 .date-hidden{
@@ -213,12 +289,12 @@ footer{
  flex-direction:column;
  align-items:center;
  justify-content:center;
- color:#a66f70;
+ color:#811d3b;
 }
 
-.date-hidden .big-date{
+.big-date{
  font-family:'Playfair Display',serif;
- font-size:27px;
+ font-size:26px;
  font-weight:bold;
 }
 
@@ -236,19 +312,19 @@ footer{
  color:#805a56;
 }
 
-/* MUSIC BUTTON */
+/* MUSIC */
 
 .music{
  position:fixed;
- top:15px;
- right:15px;
+ top:13px;
+ right:13px;
  z-index:20;
- background:#a66f70;
- color:white;
- border:0;
+ background:#801e3b;
+ color:#f8e6b8;
+ border:1px solid #d7b36d;
  border-radius:50%;
- width:43px;
- height:43px;
+ width:42px;
+ height:42px;
  font-size:18px;
 }
 
@@ -256,30 +332,30 @@ footer{
 
 .navigation{
  position:fixed;
- bottom:9px;
+ bottom:8px;
  left:0;
  right:0;
  z-index:15;
  display:flex;
  justify-content:center;
  align-items:center;
- gap:13px;
+ gap:12px;
 }
 
 .navigation button{
- border:0;
+ border:1px solid #d7b36d;
  border-radius:30px;
  padding:9px 17px;
- background:#a66f70;
+ background:#801e3b;
  color:white;
 }
 
 #pageNumber{
- background:#fffaf4;
+ background:#fff8e9;
  padding:7px 12px;
  border-radius:20px;
  font-size:12px;
- color:#805a56;
+ color:#801e3b;
 }
 
 </style>
@@ -289,53 +365,49 @@ footer{
 
 <div class="petals" id="petals"></div>
 
-<audio id="music" loop preload="auto">
+<!-- MUSIC CAN BE ADDED LATER -->
+<audio id="music" loop>
  <source src="wedding-music.mp3" type="audio/mpeg">
 </audio>
 
 <button class="music" onclick="toggleMusic()" id="musicBtn">♫</button>
 
-<!-- PAGE 1 GANESH JI -->
+
+<!-- PAGE 1: CLOSED ENVELOPE -->
 
 <section class="page active" id="p0">
  <div class="card">
 
-  <p class="small">AN AUSPICIOUS BEGINNING</p>
+  <div class="flower">🌹 ✨ 🌹</div>
 
-  <div class="flower">🌺 🪔 🌺</div>
+  <p class="small">A ROYAL WEDDING INVITATION</p>
 
-  <!-- Upload your Ganesh image as ganesh.png -->
+  <h1 class="script">Kanchan Weds Robin</h1>
 
-  <img class="ganesh" src="ganesh.png"
-  alt="Beautiful Lord Ganesha seated on a lotus">
+  <p>With Love & Blessings</p>
 
-  <h2>॥ श्री गणेशाय नमः ॥</h2>
+  <div class="envelope" id="envelope" onclick="openEnvelope()">
+   <div class="flap"></div>
+   <div class="seal">♥</div>
+   <div class="envelope-text">Wedding Invitation</div>
+  </div>
 
-  <p style="font-size:17px">
-  वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>
-  निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
-  </p>
+  <h2>You're Invited!</h2>
 
-  <div class="line"></div>
+  <p>Tap the envelope to open your invitation</p>
 
-  <h1 class="script">Shubh Aarambh</h1>
-
-  <p>With the blessings of Lord Ganesha</p>
-
-  <button class="btn" onclick="go(1)">
-  BEGIN THE CELEBRATION ♥
-  </button>
+  <button class="btn" onclick="openEnvelope()">OPEN ENVELOPE ♥</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 2 WEDDING COVER -->
+<!-- PAGE 2: WEDDING INVITATION -->
 
 <section class="page" id="p1">
  <div class="card">
 
-  <div class="flower">🌸 🌿 🌸</div>
+  <div class="flower">🌹 🌿 🌹</div>
 
   <p class="small">A BEAUTIFUL BEGINNING</p>
 
@@ -343,23 +415,24 @@ footer{
 
   <div style="font-size:65px">💌</div>
 
-  <h2>Robin & Kanchan</h2>
+  <h2>Kanchan Weds Robin</h2>
 
   <p>Two Hearts • One Beautiful Journey</p>
 
-  <p>With love and blessings, we invite you to celebrate our special day.</p>
+  <p>
+   With love and blessings, we invite you
+   to celebrate our special day.
+  </p>
 
   <div class="heart">♥</div>
 
-  <button class="btn" onclick="go(2)">
-  OPEN INVITATION
-  </button>
+  <button class="btn" onclick="go(2)">SAVE THE DATE</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 3 SCRATCH DATE REVEAL -->
+<!-- PAGE 3: SCRATCH DATE -->
 
 <section class="page" id="p2">
  <div class="card">
@@ -378,7 +451,7 @@ footer{
     <div style="font-size:30px">♥</div>
     <div class="big-date">30 November 2026</div>
     <div>MONDAY • 7:00 PM</div>
-    <div style="font-size:12px">Our Wedding Day</div>
+    <div style="font-size:12px">OUR WEDDING DAY</div>
    </div>
 
    <canvas id="scratchCanvas"></canvas>
@@ -386,7 +459,7 @@ footer{
   </div>
 
   <p class="scratch-note">
-  ✨ Rub the heart with your finger to reveal the date ✨
+   ✨ Rub the heart with your finger to reveal the date ✨
   </p>
 
   <div id="countdown"></div>
@@ -397,14 +470,44 @@ footer{
 </section>
 
 
-<!-- PAGE 4 BRIDE FIRST -->
+<!-- PAGE 4: GANESH MANTRA -->
 
 <section class="page" id="p3">
  <div class="card">
 
-  <div class="flower">🌸 🌸 🌸</div>
+  <div class="flower">🌺 🪔 🌺</div>
 
-  <p class="small">FIRST, MEET OUR BEAUTIFUL BRIDE</p>
+  <p class="small">AN AUSPICIOUS BEGINNING</p>
+
+  <img class="ganesh" src="ganesh.png" alt="Lord Ganesha">
+
+  <h2>॥ श्री गणेशाय नमः ॥</h2>
+
+  <p style="font-size:15px">
+   वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>
+   निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+  </p>
+
+  <div class="line"></div>
+
+  <h1 class="script">Shubh Aarambh</h1>
+
+  <p>With the blessings of Lord Ganesha</p>
+
+  <button class="btn" onclick="go(4)">MEET THE BRIDE ♥</button>
+
+ </div>
+</section>
+
+
+<!-- PAGE 5: BRIDE KANCHAN -->
+
+<section class="page" id="p4">
+ <div class="card">
+
+  <div class="flower">🌹 🌹 🌹</div>
+
+  <p class="small">MEET OUR BEAUTIFUL BRIDE</p>
 
   <h1 class="script">Kanchan</h1>
 
@@ -422,20 +525,20 @@ footer{
 
   <p class="small">WITH LOVE AND BLESSINGS</p>
 
-  <button class="btn" onclick="go(4)">MEET THE GROOM</button>
+  <button class="btn" onclick="go(5)">MEET THE GROOM ♥</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 5 GROOM SECOND -->
+<!-- PAGE 6: GROOM ROBIN -->
 
-<section class="page" id="p4">
+<section class="page" id="p5">
  <div class="card">
 
   <div class="flower">🌹 🌹 🌹</div>
 
-  <p class="small">NOW, MEET OUR HANDSOME GROOM</p>
+  <p class="small">MEET OUR HANDSOME GROOM</p>
 
   <h1 class="script">Robin</h1>
 
@@ -453,15 +556,15 @@ footer{
 
   <p class="small">WITH LOVE AND BLESSINGS</p>
 
-  <button class="btn" onclick="go(5)">CONTINUE ♥</button>
+  <button class="btn" onclick="go(6)">CONTINUE ♥</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 6 INVITATION -->
+<!-- PAGE 7: FAMILY INVITATION -->
 
-<section class="page" id="p5">
+<section class="page" id="p6">
  <div class="card">
 
   <div class="flower">🌸 🌸 🌸</div>
@@ -470,27 +573,27 @@ footer{
 
   <h1 class="script">Join Our Celebration</h1>
 
-  <h2>Robin ♥ Kanchan</h2>
+  <h2>Kanchan ♥ Robin</h2>
 
   <p>
-  With immense joy and the blessings of our elders,
-  we invite you and your family to grace the wedding
-  celebrations of Robin & Kanchan.
+   With immense joy and the blessings of our elders,
+   we invite you and your family to grace the wedding
+   celebrations of Kanchan & Robin.
   </p>
 
   <h2>30 November 2026</h2>
 
   <p>Your presence will make our celebration memorable.</p>
 
-  <button class="btn" onclick="go(6)">VIEW FUNCTIONS</button>
+  <button class="btn" onclick="go(7)">VIEW FUNCTIONS</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 7 LAGNA LEKHAN -->
+<!-- PAGE 8: LAGNA LEKHAN -->
 
-<section class="page" id="p6">
+<section class="page" id="p7">
  <div class="card">
 
   <p class="small">WEDDING CELEBRATIONS</p>
@@ -505,15 +608,15 @@ footer{
 
   <div class="flower">🌼 🪔 🌼</div>
 
-  <button class="btn" onclick="go(7)">NEXT FUNCTION</button>
+  <button class="btn" onclick="go(8)">NEXT FUNCTION</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 8 PRE WEDDING -->
+<!-- PAGE 9: PRE WEDDING -->
 
-<section class="page" id="p7">
+<section class="page" id="p8">
  <div class="card">
 
   <p class="small">29 NOVEMBER 2026</p>
@@ -535,15 +638,15 @@ footer{
    <p>4:00 PM</p>
   </div>
 
-  <button class="btn" onclick="go(8)">NEXT FUNCTION</button>
+  <button class="btn" onclick="go(9)">NEXT FUNCTION</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 9 WEDDING DAY -->
+<!-- PAGE 10: WEDDING DAY -->
 
-<section class="page" id="p8">
+<section class="page" id="p9">
  <div class="card">
 
   <p class="small">30 NOVEMBER 2026</p>
@@ -570,18 +673,18 @@ footer{
    <p>Under the Stars ✨</p>
   </div>
 
-  <button class="btn" onclick="go(9)">VIEW VENUE</button>
+  <button class="btn" onclick="go(10)">VIEW VENUE</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 10 VENUE -->
+<!-- PAGE 11: VENUE -->
 
-<section class="page" id="p9">
+<section class="page" id="p10">
  <div class="card">
 
-  <div class="flower">📍 🌸 📍</div>
+  <div class="flower">📍 🌹 📍</div>
 
   <p class="small">WE LOOK FORWARD TO WELCOMING YOU</p>
 
@@ -597,26 +700,28 @@ footer{
    href="https://maps.app.goo.gl/oVzaZK7vzjT5ZqFV9?g_st=aw"
    target="_blank">OPEN GOOGLE MAPS</a>
 
-  <button class="btn" onclick="go(10)">FINAL SURPRISE</button>
+  <button class="btn" onclick="go(11)">FINAL SURPRISE</button>
 
  </div>
 </section>
 
 
-<!-- PAGE 11 FINAL -->
+<!-- PAGE 12: THANK YOU -->
 
-<section class="page" id="p10">
+<section class="page" id="p11">
  <div class="card">
 
   <div class="flower">🌹 💐 🌹</div>
 
+  <p class="small">A DAY TO REMEMBER FOREVER</p>
+
   <h1 class="script">Thank You!</h1>
 
-  <h2>Robin ♥ Kanchan</h2>
+  <h2>Kanchan ♥ Robin</h2>
 
   <p>
-  We would be delighted to celebrate
-  this beautiful occasion with you.
+   We would be delighted to celebrate
+   this beautiful occasion with you.
   </p>
 
   <div class="heart">♥</div>
@@ -630,11 +735,11 @@ footer{
   <p>With Love & Blessings</p>
 
   <button class="btn" onclick="shareInvitation()">
-  SHARE ON WHATSAPP
+   SHARE ON WHATSAPP
   </button>
 
   <button class="btn light" onclick="go(0)">
-  REPLAY INVITATION
+   REPLAY INVITATION
   </button>
 
   <footer>Made with Love ♥</footer>
@@ -649,7 +754,7 @@ footer{
 
  <button onclick="previous()">← BACK</button>
 
- <span id="pageNumber">1 / 11</span>
+ <span id="pageNumber">1 / 12</span>
 
  <button onclick="next()">NEXT →</button>
 
@@ -659,7 +764,10 @@ footer{
 <script>
 
 let current=0;
-const total=11;
+const total=12;
+
+
+/* PAGE TRANSITION */
 
 function go(n){
 
@@ -682,10 +790,9 @@ function go(n){
  window.scrollTo(0,0);
 
  if(current===2){
-  setTimeout(setupScratch,100);
+  setupScratch();
  }
 
- startMusic();
 }
 
 function next(){
@@ -697,28 +804,33 @@ function previous(){
 }
 
 
-/* BACKGROUND MUSIC */
+/* OPEN ENVELOPE */
 
-const music=document.getElementById("music");
-let musicStarted=false;
+function openEnvelope(){
 
-function startMusic(){
+ const envelope=document.getElementById("envelope");
 
- if(!musicStarted){
-  music.play().then(()=>{
-   musicStarted=true;
-   document.getElementById("musicBtn").innerText="♫";
-  }).catch(()=>{});
- }
+ envelope.classList.add("opened");
+
+ setTimeout(()=>{
+  go(1);
+ },1100);
 
 }
+
+
+/* MUSIC - ADD MP3 LATER */
+
+const music=document.getElementById("music");
 
 function toggleMusic(){
 
  if(music.paused){
-  music.play();
-  musicStarted=true;
-  document.getElementById("musicBtn").innerText="♫";
+  music.play().then(()=>{
+   document.getElementById("musicBtn").innerText="♫";
+  }).catch(()=>{
+   alert("Please upload wedding-music.mp3 first");
+  });
  }else{
   music.pause();
   document.getElementById("musicBtn").innerText="🔇";
@@ -741,7 +853,6 @@ function setupScratch(){
 
  const w=wrap.clientWidth;
  const h=wrap.clientHeight;
-
  const ratio=window.devicePixelRatio||1;
 
  canvas.width=w*ratio;
@@ -750,14 +861,14 @@ function setupScratch(){
  ctx.scale(ratio,ratio);
 
  const gradient=ctx.createLinearGradient(0,0,w,h);
- gradient.addColorStop(0,"#e9c9a0");
- gradient.addColorStop(.5,"#d9ad83");
- gradient.addColorStop(1,"#f3dfbd");
+ gradient.addColorStop(0,"#e9c995");
+ gradient.addColorStop(.5,"#c69b5e");
+ gradient.addColorStop(1,"#f2dfb8");
 
  ctx.fillStyle=gradient;
  ctx.fillRect(0,0,w,h);
 
- ctx.fillStyle="#78503f";
+ ctx.fillStyle="#641b35";
  ctx.textAlign="center";
  ctx.font="bold 19px Georgia";
  ctx.fillText("♥  SCRATCH HERE  ♥",w/2,h/2);
@@ -772,7 +883,7 @@ function setupScratch(){
 
  function scratch(e){
 
-  if(!drawing)return;
+  if(!drawing || cleared)return;
 
   const rect=canvas.getBoundingClientRect();
 
@@ -780,7 +891,7 @@ function setupScratch(){
   const y=e.clientY-rect.top;
 
   ctx.beginPath();
-  ctx.arc(x,y,19,0,Math.PI*2);
+  ctx.arc(x,y,20,0,Math.PI*2);
   ctx.fill();
 
  }
@@ -802,13 +913,16 @@ function setupScratch(){
   const percent=transparent/(pixels.length/16);
 
   if(percent>.35){
+
    cleared=true;
+
    canvas.style.transition="opacity .8s";
    canvas.style.opacity="0";
 
    setTimeout(()=>{
     canvas.style.display="none";
    },850);
+
   }
 
  }
@@ -895,7 +1009,7 @@ document.addEventListener("touchend",e=>{
 },{passive:true});
 
 
-/* FLOWER ANIMATION */
+/* FLOATING FLOWERS */
 
 const petals=document.getElementById("petals");
 
@@ -904,7 +1018,7 @@ for(let i=0;i<18;i++){
  const petal=document.createElement("div");
 
  petal.className="petal";
- petal.innerText=["🌸","🌺","🌼","✨"][i%4];
+ petal.innerText=["🌹","🌸","🌺","✨"][i%4];
 
  petal.style.left=Math.random()*100+"%";
  petal.style.animationDuration=(7+Math.random()*9)+"s";
@@ -922,7 +1036,7 @@ function shareInvitation(){
 
  const msg=
  "Wedding Invitation ❤️\n\n"+
- "Robin & Kanchan\n"+
+ "Kanchan Weds Robin\n"+
  "30 November 2026 | 7:00 PM\n\n"+
  "Bride: Kanchan\n"+
  "Daughter of Mrs. Neetu Devi & Mr. Rajesh Saini\n\n"+
